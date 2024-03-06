@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado BOM DOCE</title>
+</head>
+
+<body>
+    Quantodade de chocolate:
+    <input id="input_qtd_chocolate">
+    <br>
+    <button onclick="Compra()">
+        Compra!
+    </button>
+    <p id="div_mensagem">
+    </p>
+</body>
+
+</html>
+
+<script>
+    function Compra() {
+        var qtdChocolate = input_qtd_chocolate.value
+        var valorINT = qtdChocolate * 3
+
+        if (qtdChocolate >= 12) {
+            var precoPromo = qtdChocolate * 2.5
+            div_mensagem.innerHTML = `O valor da sua compra foi de R$${precoPromo}`
+        }
+        else {
+            div_mensagem.innerHTML = `O valor da sua compra foi de R$${valorINT}`
+        }
+    }
+
+
+</script>

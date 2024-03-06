@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequencia</title>
+</head>
+
+<body>
+    Insira frequencia do aluno:
+    <input id="input_freq_aluno">
+
+    <button onclick="analisarFreq()">
+        Analisar Frequencia!
+    </button>
+
+    <p id="input_img">
+
+
+    </p>
+</body>
+
+</html>
+
+<script>
+    function analisarFreq() {
+        var frequencia = input_freq_aluno.value
+
+        if(frequencia <= 50) {
+        input_img.innerHTML = `<img src="https://img.freepik.com/free-vector/travelers-concept-illustration_114360-2602.jpg"; style= "width:200px; height:100px";>`
+
+       
+        }
+        else {
+        input_img.innerHTML = `<img src="https://cdni.iconscout.com/illustration/premium/thumb/bright-student-5684909-4737147.png"; style= "width:200px; height:100px;">`
+        }
+    }
+
+</script>
